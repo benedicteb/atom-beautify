@@ -2361,6 +2361,62 @@
       }
     }
   },
+  "groovy": {
+    "title": "Groovy",
+    "type": "object",
+    "description": "Options for language Groovy",
+    "collapsed": true,
+    "beautifiers": [
+      "busl2"
+    ],
+    "grammars": [
+      "Groovy"
+    ],
+    "extensions": [
+      "groovy"
+    ],
+    "properties": {
+      "disabled": {
+        "title": "Disable Beautifying Language",
+        "order": -3,
+        "type": "boolean",
+        "default": false,
+        "description": "Disable Groovy Beautification"
+      },
+      "default_beautifier": {
+        "title": "Default Beautifier",
+        "order": -2,
+        "type": "string",
+        "default": "busl2",
+        "description": "Default Beautifier to be used for Groovy",
+        "enum": [
+          "busl2"
+        ]
+      },
+      "beautify_on_save": {
+        "title": "Beautify On Save",
+        "order": -1,
+        "type": "boolean",
+        "default": false,
+        "description": "Automatically beautify Groovy files on save"
+      },
+      "indent_size": {
+        "type": "integer",
+        "default": null,
+        "minimum": 0,
+        "description": "Indentation size/length (Supported by busl2)",
+        "title": "Indent size",
+        "beautifiers": [
+          "busl2"
+        ],
+        "key": "indent_size",
+        "language": {
+          "name": "Groovy",
+          "namespace": "groovy"
+        }
+      }
+    }
+  },
   "fortran": {
     "title": "Fortran",
     "type": "object",
@@ -9404,6 +9460,22 @@
             "type": "string",
             "default": "",
             "description": "Absolute path to the \"isort\" executable's binary/script."
+          }
+        }
+      },
+      "busl2": {
+        "key": "busl2",
+        "title": "busl2",
+        "type": "object",
+        "collapsed": true,
+        "description": "Options for busl2 executable.",
+        "properties": {
+          "path": {
+            "key": "path",
+            "title": "Binary/Script Path",
+            "type": "string",
+            "default": "",
+            "description": "Absolute path to the \"busl2\" executable's binary/script."
           }
         }
       },

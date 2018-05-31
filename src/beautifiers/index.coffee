@@ -38,6 +38,7 @@ module.exports = class Beautifiers extends EventEmitter
     'align-yaml'
     'autopep8'
     'brittany'
+    'busl2'
     'coffee-formatter'
     'coffee-fmt'
     'cljfmt'
